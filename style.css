@@ -52,11 +52,18 @@ header{
 }
 #cartItems{
     text-align: center;
+    position: absolute;
+    margin-right: 38%;
+    margin-top: -6%;
+    top: 0;
+    right: 0;
     width: 15px;
     height: 15px;
-    padding: 10px;
+    padding: 7px;
     border-radius: 50%;
     background-color: #e2574c;
+    color: white;
+    display: none;
 }
 #nav{
     align-self: center;
@@ -85,9 +92,16 @@ li a{
     color: #e2574c;
 }
 #cart-logo{
+    position: relative;
     height: 75px;
     align-self: flex-end;
     padding-right: 50px;
+}
+#cart-logo img{
+    height: 100%;
+}
+#cartItems{
+    
 }
 #banner{
     color: white;
@@ -335,6 +349,4 @@ a:hover{
 #goog{
     margin-left: -5px;
 }
-*{
-    border: 1px solid;
-}
+

@@ -15,19 +15,19 @@
 
 <body>
     <header>
-
         <img id="logo" src="images/aloha-logo.svg">
-
         <ul id="nav">
-            <li><a href="#about">about</a></li>
-            <li><a href="#grid">shop</a></li>
-            <li><a href="#carouselDiv">featured</a></li>
-            <li><a href="#subscribe">updates</a></li>
+            <li><a onclick="initScroll('about')" href="#">about</a></li>
+            <li><a onclick="initScroll('grid')" href="#">shop</a></li>
+            <li><a onclick="initScroll('carouselDiv')" href="#">featured</a></li>
+            <li><a onclick="initScroll('subscribe')" href="#">updates</a></li>
         </ul>
-
-        <img id="cart-logo" src="images/cart-icon.svg">
-        <span id="cartItems">0</span>
+        <div id="cart-logo">
+            <img src="images/cart-icon.svg">
+            <div id="cartItems">0</div>
+        </div>
     </header>
+    
     <div id="banner" class="shadow">
         <p>New Collection</p>
         <h1>Spring/Summer 2016</h1>
@@ -68,56 +68,56 @@
                 <p class="grey">Dresses</p>
                 <h3>Checked Stretch Dress</h3>
                 <p class="grey bold">$129.00</p>
-                <button class="cartButton">Add to cart</button>
+                <button class="cartButton" onclick="addToCart()">Add to cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="./images/blue-hipster-backpack.jpg">
                 <p class="grey">Bags</p>
                 <h3>Blue Hipster Backpack</h3>
                 <p class="grey bold">$69.00</p>
-                <button class="cartButton">Add to cart</button>
+                <button class="cartButton" onclick="addToCart()">Add to cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="./images/demin-overall-shorts.jpg">
                 <p class="grey">Denim</p>
                 <h3>Denim Overall Shorts</h3>
                 <p class="grey bold">$89.00</p>
-                <button class="cartButton">Add to cart</button>
+                <button class="cartButton" onclick="addToCart()">Add to cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="./images/pink-dotted-dress.jpg">
                 <p class="grey">Dresses</p>
                 <h3>Pink Dotted Dress</h3>
                 <p class="grey bold">$99.00</p>
-                <button class="cartButton">Add to cart</button>
+                <button class="cartButton" onclick="addToCart()">Add to cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="./images/blue-silk-dress.jpg">
                 <p class="grey">Dresses</p>
                 <h3>Blue Silk Dress</h3>
                 <p class="grey bold">$69.00</p>
-                <button class="cartButton">Add to cart</button>
+                <button class="cartButton" onclick="addToCart()">Add to cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="./images/cotton-blue-shirt.jpg">
                 <p class="grey">Shirts</p>
                 <h3>Cotton Blue Shirt</h3>
                 <p class="grey bold">$89.00</p>
-                <button class="cartButton">Add to cart</button>
+                <button class="cartButton" onclick="addToCart()">Add to cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="./images/cotton-yellow-tshirt.jpg">
                 <p class="grey">Shirts</p>
                 <h3>Cotton Yellow T-shirt</h3>
                 <p class="grey bold">$69.00</p>
-                <button class="cartButton">Add to cart</button>
+                <button class="cartButton" onclick="addToCart()">Add to cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="./images/stretch-knit-dress.jpg">
                 <p class="grey">Dresses</p>
                 <h3>Stretch Knit Dress</h3>
                 <p class="grey bold">$169.00</p>
-                <button class="cartButton">Add to cart</button>
+                <button class="cartButton" onclick="addToCart()">Add to cart</button>
             </div>
 
         </div>
@@ -128,11 +128,10 @@
             sales, and
             get free style tips from our blog. Unsubscribe at any time.</p>
         <div id="formCont">
-            <form id="subForm" onsubmit ="buttonClick()">
+            <form id="subForm" onsubmit="buttonClick()">
                 <input type="email" name="email" id="email" placeholder="Your Email" required>
-                <input type="submit" form="subForm" id="submit" value= "Subscribe" >
+                <input type="submit" form="subForm" id="submit" value="Subscribe">
             </form>
-            
         </div>
     </div>
 
